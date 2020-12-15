@@ -4,6 +4,7 @@ node_js:
 script:
   - npm run react-ui-install
   - npm run build
+  - npm run test
 deploy:
   provider: heroku
   app: calm-cliffs-39424
