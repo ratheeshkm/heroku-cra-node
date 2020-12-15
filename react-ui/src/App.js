@@ -58,7 +58,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React RKM
+          Learn React Test
         </a></p>
       </header>
     </div>
