@@ -5,10 +5,10 @@ import './App.css';
 function App() {
   const [message, setMessage] = useState(null);
   const [isFetching, setIsFetching] = useState(false);
-  const [url, setUrl] = useState('/api');
+  //const [url, setUrl] = useState('/api');
 
   const fetchData = useCallback(() => {
-    fetch(url)
+    fetch('/api')
       .then(response => {
         if (!response.ok) {
           throw new Error(`status ${response.status}`);
@@ -22,7 +22,7 @@ function App() {
         setMessage(`API call failed: ${e}`);
         setIsFetching(false);
       })
-  }, [url]);
+  }, ['/api']);
 
   useEffect(() => {
     setIsFetching(true);
