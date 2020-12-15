@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '12'
 script:
-  - npm react-ui-install
+  - npm run react-ui-install
   - npm run build
 deploy:
   provider: heroku
